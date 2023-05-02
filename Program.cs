@@ -35,22 +35,23 @@ namespace GettingStarted
                         x.AddSagas(entryAssembly);
                         x.AddActivities(entryAssembly);
 
-                        /*
                         
-                        x.UsingAzureServiceBus(configure: (context, cfg) =>
+                        
+                        x.UsingAzureServiceBus((context, cfg) =>
                         {
                             // NOT PRODUCTION CODE - Use Primary Connection String from Shared access policies
-                            cfg.Host(connectionString: "Endpoint=sb://poc-masstransit-servicebus.servicebus.windows.net/;SharedAccessKeyName=getting-started;SharedAccessKey=eH4dvEbLYlPX1R6swIICv8fhHcz5sCS/n+ASbMsDsFI=");
+                            cfg.Host("Endpoint=sb://poc-masstransit-servicebus.servicebus.windows.net/;SharedAccessKeyName=getting-started;SharedAccessKey=WIt4lgD6b7cSDUt/3WqeQZtvx77EHs2HQ+ASbLqwIfM=");
                             cfg.ConfigureEndpoints(context);
                         });
-                        */
+                        
+                        
 
-
-
+                        /*
                         x.UsingInMemory((context, cfg) =>
                         {
                             cfg.ConfigureEndpoints(context);
                         });
+                        */
                         
                         
                         

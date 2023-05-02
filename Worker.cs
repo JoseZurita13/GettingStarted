@@ -26,7 +26,7 @@ namespace GettingStarted
                         Name = "World"
                     }, stoppingToken); // Task
 
-                await Task.Delay(10000, stoppingToken);
+                await Task.Delay(1000, stoppingToken);
             }
         }
     }
